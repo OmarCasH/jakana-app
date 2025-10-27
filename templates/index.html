@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="/static/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <title>JAKANA</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo__nav"><img src="/static/img/logo.png" alt=""></div>
+    <ul class="lista__nav">
+      <li class="link__nav--header"><a href="{{url_for('login')}}" class="item__nav--header"><span class="material-symbols-outlined">login</span></a></li>
+      <li class="link__nav--header"><a href="{{url_for('registro')}}" class="item__nav--header"><span class="material-symbols-outlined">person_add</span></a></li>
+    </ul>
+  </nav>
+  <header class="conten__header">
+    <div class="texto__principal">
+      <h1> JAKANA</h1>
+      <p><B style="color: rgb(202, 41, 68);">MUJER</B><br><br> 💖 Estamos aquí para ayudarte si estás pasando por un momento difícil en tus relaciones personales y necesitas apoyo.</p>
+      <div class="seccion__btn">
+        <p>Queremos saber mas sobre lo que necesitas</p>    
+        <p>Deseas Iniciar la encuesta?</p>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">Vamos</a></button>    
+        </div>
+      </div>
+    </div>      
+  </header>
+</body>
+</html>

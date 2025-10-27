@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/registro.css">
+  <link rel="icon" href="/static/img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/registro.css">
+  <title>Registro</title>
+</head>
+<body>
+  <form action="{{ url_for ('registro')}}" method="POST" class="form__container">
+    <h1> JAKANA</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-messages">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+      <div class="content__form">
+          <label for="username">Usuario</label>
+          <input type="text" id="username" name="usuario" required><br><br>
+
+          <label for="email">Em@il</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="contrasena" required><br><br>
+
+          <label for="telefono">Contacto de Emergencia</label>
+          <input type="number" id="telefono" name="telefono" required><br><br>
+          
+          <input type="submit" value="Registrate" class="btn__registro">
+      </div>
+  </form>    
+  <div class="btn__home"><a href="/" class="btn__home--link"><span class="material-symbols-outlined">home</span></a></div>
+  <div class="btn__home"><a href="{{url_for('registro')}}" class="btn__register--link"><span class="material-symbols-outlined">person_add</span></a></div>
+</body>
+</html>

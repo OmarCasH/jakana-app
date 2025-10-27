@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="/static/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="/static/css/registro.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/encuesta.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    <nav class="navbar">
+      <div class="logo__nav"><img src="/static/img/logo.png" alt=""></div>
+      <ul class="lista__nav">
+        <li class="link__nav--header"><a href="{{url_for('login')}}" class="item__nav--header"><span class="material-symbols-outlined">login</span></a></li>
+        <li class="link__nav--header"><a href="{{url_for('registro')}}" class="item__nav--header"><span class="material-symbols-outlined">person_add</span></a></li>
+      </ul>
+    </nav>
+    <main>  
+      <form action="">
+        <label for="">¿Te están violentando física o emocionalmente?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">        
+        <label for="">¿Sientes que las agresiones van más allá de solo palabras?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Te quieres separar de esa relación pero no sabes cómo?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Considera que es normal la violencia en las relaciones personales?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Sabe que es la violencia y como prevenirla?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Quiere saber más sobre el tema?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Con qué frecuencia alguien te grita, te insulta o te hace sentir miedo?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NUNCA</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">AVECES</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Tienes a alguien en quien confíes para hablar si te sientes triste, herido/a o maltratado/a?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">TAL VEZ</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+        <label for="">¿Te han hecho sentir culpable o inferior constantemente?</label>
+        <div class="btn__header">
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">SI</a></button>
+          <button class="btn btn__encuesta"><a href="{{url_for('encuesta')}}">NO</a></button>    
+        </div>
+        <input type="text" placeholder="Algún Comentario ?">
+      </form>
+    </main>
+  <div class="btn__home">
+    <a href="/" class="btn__home--link"><span class="material-symbols-outlined">home</span></a>
+  </div>
+</body>
+</html>

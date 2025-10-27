@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font__titulos:"Karantina", system-ui ;
+  --font__texto:"Story Script", sans-serif;
+  --font__label:"Roboto", sans-serif;
+}
+
+body {
+  background: url(/static/img/bg_inicio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* ------ FORMULARIO ---------  */
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form__container h1 {
+  margin: .4em;
+  font-family: var(--font__titulos);
+  font-size: 3.2rem;
+}
+
+.form__container .content__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 245, 245, 0.63);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+  width: 100%;
+  max-width: 500px;
+}
+
+.content__form label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--font__label);
+}
+
+.content__form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #33323262;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.content__form input:focus {
+  outline: none;
+  border-bottom: 2px solid #f53b79;
+}
+
+.content__form .btn__registro {
+  padding: 10px 20px;
+  background-color: #f53b79;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.content__form .btn__registro:hover {
+  background-color: #d4188c;
+}
+
+.btn__home--link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f53b79;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+  transition: background-color 0.3s ease;
+  z-index: 1000;  
+}
+
+.btn__register--link {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background-color: #f53b79;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+  transition: background-color 0.3s ease;
+  z-index: 1000;  
+}

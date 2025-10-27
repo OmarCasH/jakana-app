@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font__titulos:"Karantina", system-ui ;
+  --font__texto:"Story Script", sans-serif;
+  --font__label:"Roboto", sans-serif;
+}
+
+body {
+  background: url(/static/img/bg_form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* ------ NAVBAR --------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .15em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.705);
+}
+
+.navbar .logo__nav img {
+  height: 55px;
+  width: 60px;
+}
+
+.navbar .lista__nav {
+  display: flex;
+  gap: 2em; 
+  padding-right: 1.5em;
+}
+
+.navbar .lista__nav .link__nav--header{
+  list-style-type: none;
+  transition: scale 1.2s ease-in-out ;
+}
+
+.navbar .lista__nav .link__nav--header:hover{
+  scale: 1.01;
+}
+
+.navbar .lista__nav .link__nav--header .item__nav--header{
+  text-decoration: none;
+  color: rgba(245, 59, 121, 0.815);
+}
+
+/* -------- HEADER --------- */
+
+.conten__header {
+  width: 100%;
+  height: 100vh;
+  padding: 0 1em ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.texto__principal {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.texto__principal h1 {
+  margin: 3.4em auto;
+  font-family: var(--font__titulos);
+  font-size: 3rem ;
+}
+
+.btn__header {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  margin-top: .2em;
+}
+
+.btn {
+  border: 1px solid rgba(212, 24, 140, 0.452);
+  border-radius: 15px;
+  padding: 1em;
+  background: rgba(245, 59, 121, 0.815);
+  box-shadow: 3px 3px 10px 5px pink;
+  color: white;
+  font-size: .89rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.seccion__btn .btn__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .88em;
+}
+
+.seccion__btn .btn__encuesta a {
+  color: white;
+  text-decoration: none;
+  margin: 1.2em auto;
+  width: 50%;
+}
+
+.texto__principal p {
+  font-family: var(--font__label);
+  font-size: clamp(1rem, 2vw, 4.5rem) ;
+  letter-spacing: 2px;
+}
+
+.texto__principal img {
+  height: 250px;
+}
+
+
+
