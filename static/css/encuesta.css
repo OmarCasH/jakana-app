@@ -32,6 +32,9 @@ main form {
 
 main form label {
   font-size: 1.1rem;
+  font-family: var(--font__label);
+  font-weight: 300;
+  padding: 1em 0;
 }
 
 main form input {
@@ -55,4 +58,16 @@ main form input {
   text-decoration: none;
   color: white;
   font-size: 0.8rem;
+}
+
+.btn__enviar--link {
+  bottom: 0px;
+  left: 0px;
+  background-color: #f53b79;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+  border-radius:100%;
+  margin: auto;
 }
