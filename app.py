@@ -31,7 +31,7 @@ def registro():
         for u in usuarios:
           if u['usuario'] == usuario:
             flash('El usuario ya Esta registrado')
-            return render_template ('registro.html')
+            return render_template ('login.html')
         
         usuarios.append({
           'usuario' : usuario,
@@ -44,7 +44,7 @@ def registro():
         archivo.truncate()
         flash ('Usuario Creado Correctamente')
                
-      return render_template ('registro.html')             
+      return render_template ('login.html')             
         
     except Exception as e :
       print(f"Error : {e}")
@@ -123,4 +123,3 @@ def emergencia():
 
 if __name__ == "__main__":
   app.run(debug=True)
-
