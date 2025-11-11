@@ -34,3 +34,11 @@ botonesEncuesta.forEach(boton => {
     boton.style.color = "black";
   });
 });
+
+// --  BTN -- S.O.S 
+
+const btnSos = document.querySelector('.btn__sos--link');
+
+btnSos.addEventListener('click', () => {
+  console.log('?si voy')
+} )
