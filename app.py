@@ -75,10 +75,8 @@ def login():
       if u['usuario'] == usuario and u['contrasena'] == contrasena:
         session['usuario'] = usuario
         flash(f"Bienvenid@ {usuario.capitalize()}")
-        return redirect(url_for('menu'))
-      
-      
-      
+        return redirect(url_for('menu'))     
+            
     flash("Verifica tus Credenciales")
   
   return render_template('login.html')
@@ -104,8 +102,7 @@ def emergencia():
   
   if not usuario_actual:
     print(" quedo aca")
-    return redirect('/menu')
-  
+    return redirect('/menu')  
   
   with open('static/js/usuarios.json', 'r') as archivo:
     usuarios = json.load(archivo)
@@ -120,6 +117,12 @@ def emergencia():
     return redirect(url_whatsapp)
   else:
     return "No se encontró el teléfono del usuario", 404
+  
+  
+@app.route ('/sos', methods=('GET', 'POST'))
+def sos():
+  return render_template('emergencia.html')
 
 if __name__ == "__main__":
   app.run(debug=True)
+
